@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Message Transfer</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <label for="message">Welche Nachricht möchtest du weitergeben?</label>
-        <input type="text" id="message" placeholder="Nachricht">
-        <input type="button" value="Submit" onclick="submit()">
-        <h1>Letzte Nachricht:</h1>
-        <div id="result"></div>
-        <script src="assets/js/main.js"></script>
+    <div>
+        <h1>Welche Nachricht möchtest du weitergeben?</h1>
+        <input type="text" id="message" placeholder="Bitte eingeben">
+        <input type="submit" value="Senden" onclick="submitInput()">
+        <p id="errorOutput">Bitte gib eine Nachricht ein!</p>
+        <h2>Letzte Nachricht:</h2>
+        <p id="result"></p>
+    </div>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
